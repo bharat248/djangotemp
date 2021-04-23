@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>this is home page</h1>
+    <h3>
+      <form action = "{% url 'output' %}">
+        {% csrf_token %}
+        <b>Upload Image : </b> <input type = "file" required name = 'img'><br>
+        <input type='submit' name='' value='submit'>
+      </form>
+    </h3>
+  </body>
+</html>
